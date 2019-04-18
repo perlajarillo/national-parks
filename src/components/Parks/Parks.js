@@ -3,7 +3,7 @@ import { loadModules } from "@esri/react-arcgis";
 import tree from "../../images/tree.png";
 
 const Parks = props => {
-  const [graphic, setMyFeatureLayer] = useState(null);
+  const [myFeatureLayer, setMyFeatureLayer] = useState(null);
   useEffect(() => {
     loadModules(["esri/layers/FeatureLayer"])
       .then(([FeatureLayer]) => {
@@ -39,9 +39,9 @@ const Parks = props => {
       .catch(err => console.error(err));
 
     return function cleanup() {
-      props.view.graphics.remove(graphic);
+      props.map.remove(myFeatureLayer);
     };
-  }, [graphic, props]);
+  }, [props]);
 
   return null;
 };
