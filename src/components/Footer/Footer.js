@@ -55,7 +55,9 @@ function Footer() {
             Park's information is a compilation from:{" "}
             <a href="https://www.nps.gov/index.htm">National Parks Service</a>{" "}
             and{" "}
-            <a href="https://en.wikipedia.org/wiki/National_park">Wikipedia</a>
+            <a href="https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States">
+              Wikipedia
+            </a>
           </p>
           <p className="footerText">
             ArcGIS REST Services provided by{" "}
