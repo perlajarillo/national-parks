@@ -39,6 +39,6 @@
     "last 1 safari version"
   ],
   "devDependencies": {
-    "react-dev-utils": "^8.0.0"
+    "react-dev-utils": "^11.0.4"
   }
 }
